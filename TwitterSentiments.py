@@ -8,19 +8,11 @@ import re
 import collections
 from collections import Counter
 from pylab import *
+from Credentials import *
 
 # @BEGIN main
-# @IN tweet @as Tweets
+# @IN input_mask_file @URI file:Credentials.py
 # @OUT matplotlib.pyplot @as plt
-# Go to http://apps.twitter.com and create an app.
-# The consumer key and secret will be generated for you after
-consumer_key="yiHz2vJPQmHRIZ3WcAZcbhloY"
-consumer_secret="N1kGE6Y46z1KETOpUdMD1wqWQLGI35smz4f48k0wa4C4h9kUYv"
-
-# After the step above, you will be redirected to your app's page.
-# Create an access token under the the "Your access token" section
-access_token="2670240956-3D795oeGR2BFIbKqVmn1Fdy2mjINAbnBI1Ks4XU"
-access_token_secret="WNcDtRDkI6JPv2QsXq5jJ10AwiiawfQNcJrvhXyNqmWye"
 
 # @BEGIN OpenAuthentication
 # @IN consumer_key
