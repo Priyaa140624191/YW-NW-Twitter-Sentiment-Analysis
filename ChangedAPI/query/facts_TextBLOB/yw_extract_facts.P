@@ -1,0 +1,95 @@
+
+% FACT: extract_source(source_id, source_path).
+extract_source(1, 'Sentiment_TextBLOB.py').
+
+% FACT: annotation(annotation_id, source_id, line_number, tag, keyword, value).
+annotation(1, 1, 1, 'begin', '@BEGIN', 'Sentiment_TextBLOB').
+annotation(2, 1, 1, 'desc', '@desc', 'Exercise YW for Analysing Tweets with TextBLOB').
+annotation(3, 1, 2, 'in', '@IN', 'tweet.csv').
+annotation(4, 1, 2, 'as', '@AS', 'TweetsinCSV').
+annotation(5, 1, 2, 'uri', '@URI', 'file:tweet.csv').
+annotation(6, 1, 3, 'out', '@out', 'matplotlib.pyplot').
+annotation(7, 1, 3, 'as', '@as', 'plt').
+annotation(8, 1, 3, 'uri', '@URI', 'file:Scores_TextBLOB.jpg').
+annotation(9, 1, 12, 'begin', '@BEGIN', 'AccessTweets').
+annotation(10, 1, 12, 'desc', '@desc', 'To read the tweets from tweet.csv file').
+annotation(11, 1, 13, 'in', '@IN', 'tweet.csv').
+annotation(12, 1, 13, 'as', '@AS', 'TweetsinCSV').
+annotation(13, 1, 13, 'uri', '@URI', 'file:tweet.csv').
+annotation(14, 1, 14, 'out', '@OUT', 'tweets_file').
+annotation(15, 1, 14, 'as', '@AS', 'TweetRead').
+annotation(16, 1, 17, 'end', '@END', 'AccessTweets').
+annotation(17, 1, 23, 'begin', '@BEGIN', 'CountSentiments').
+annotation(18, 1, 23, 'desc', '@desc', 'Calculate sentiments with TextBLOB').
+annotation(19, 1, 24, 'in', '@IN', 'tweets_file').
+annotation(20, 1, 24, 'as', '@AS', 'TweetRead').
+annotation(21, 1, 25, 'out', '@OUT', 'positive').
+annotation(22, 1, 25, 'as', '@AS', 'PositiveCount').
+annotation(23, 1, 26, 'out', '@OUT', 'negative').
+annotation(24, 1, 26, 'as', '@AS', 'NegativeCount').
+annotation(25, 1, 27, 'out', '@OUT', 'neutral').
+annotation(26, 1, 27, 'as', '@AS', 'NeutralCount').
+annotation(27, 1, 43, 'end', '@END', 'CountSentiments').
+annotation(28, 1, 45, 'begin', '@BEGIN', 'Measures').
+annotation(29, 1, 45, 'desc', '@desc', 'SetPieChartMeasures').
+annotation(30, 1, 46, 'in', '@IN', 'positive').
+annotation(31, 1, 46, 'as', '@AS', 'PositiveCount').
+annotation(32, 1, 47, 'in', '@IN', 'negative').
+annotation(33, 1, 47, 'as', '@AS', 'NegativeCount').
+annotation(34, 1, 48, 'in', '@IN', 'neutral').
+annotation(35, 1, 48, 'as', '@AS', 'NeutralCount').
+annotation(36, 1, 49, 'out', '@OUT', 'explode').
+annotation(37, 1, 49, 'as', '@AS', 'Explode').
+annotation(38, 1, 50, 'out', '@OUT', 'labels').
+annotation(39, 1, 50, 'as', '@AS', 'Labels').
+annotation(40, 1, 51, 'out', '@OUT', 'sizes').
+annotation(41, 1, 51, 'as', '@AS', 'Sizes').
+annotation(42, 1, 52, 'out', '@OUT', 'colors').
+annotation(43, 1, 52, 'as', '@AS', 'Colors').
+annotation(44, 1, 57, 'end', '@END', 'SetPieChartMeasures').
+annotation(45, 1, 59, 'begin', '@BEGIN', 'DrawPieChart').
+annotation(46, 1, 59, 'desc', '@desc', 'Pie chart saved in Scores_TextBLOB.jpeg').
+annotation(47, 1, 60, 'in', '@IN', 'explode').
+annotation(48, 1, 60, 'as', '@AS', 'Explode').
+annotation(49, 1, 61, 'in', '@IN', 'labels').
+annotation(50, 1, 61, 'as', '@AS', 'Labels').
+annotation(51, 1, 62, 'in', '@IN', 'sizes').
+annotation(52, 1, 62, 'as', '@AS', 'Sizes').
+annotation(53, 1, 63, 'in', '@IN', 'colors').
+annotation(54, 1, 63, 'as', '@AS', 'Colors').
+annotation(55, 1, 64, 'out', '@out', 'matplotlib.pyplot').
+annotation(56, 1, 64, 'as', '@as', 'plt').
+annotation(57, 1, 64, 'uri', '@URI', 'file:Scores_TextBLOB.jpg').
+annotation(58, 1, 70, 'end', '@END', 'DrawPieChart').
+annotation(59, 1, 72, 'end', '@END', 'Sentiment_TextBLOB').
+
+% FACT: annotation_qualifies(qualifying_annotation_id, primary_annotation_id).
+annotation_qualifies(2, 1).
+annotation_qualifies(4, 3).
+annotation_qualifies(5, 3).
+annotation_qualifies(7, 6).
+annotation_qualifies(8, 6).
+annotation_qualifies(10, 9).
+annotation_qualifies(12, 11).
+annotation_qualifies(13, 11).
+annotation_qualifies(15, 14).
+annotation_qualifies(18, 17).
+annotation_qualifies(20, 19).
+annotation_qualifies(22, 21).
+annotation_qualifies(24, 23).
+annotation_qualifies(26, 25).
+annotation_qualifies(29, 28).
+annotation_qualifies(31, 30).
+annotation_qualifies(33, 32).
+annotation_qualifies(35, 34).
+annotation_qualifies(37, 36).
+annotation_qualifies(39, 38).
+annotation_qualifies(41, 40).
+annotation_qualifies(43, 42).
+annotation_qualifies(46, 45).
+annotation_qualifies(48, 47).
+annotation_qualifies(50, 49).
+annotation_qualifies(52, 51).
+annotation_qualifies(54, 53).
+annotation_qualifies(56, 55).
+annotation_qualifies(57, 55).
