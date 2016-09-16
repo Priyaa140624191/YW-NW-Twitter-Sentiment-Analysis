@@ -1,0 +1,35 @@
+
+
+---------------------------------------------------------------------------------------------------
+YW_Q1 : What is the name and description of the workflow implemented by the script?
+
+yw_q1(WorkflowName, Description)
+...................................................................................................
+yw_q1('Sentiment_NLTK','Exercise YW for Analysing Tweets with NLTK').
+
+
+---------------------------------------------------------------------------------------------------
+YW_Q2 : What workflow steps comprise the top-level workflow?
+
+yw_q2(StepName, Description)
+...................................................................................................
+yw_q2('DrawPieChart','Pie chart saved in Scores_NLTK.jpeg').
+yw_q2('Measures','SetPieChartMeasures').
+yw_q2('CountSentiments','Calculate sentiments with NLTK').
+yw_q2('AccessTweets','To read the tweets from tweet.csv file').
+
+
+---------------------------------------------------------------------------------------------------
+YW_Q3 : Where is the definition of workflow step CountSentiments?
+
+yw_q3(SourceFile, StartLine, EndLine)
+...................................................................................................
+yw_q3('Sentiment_NLTK.py',25,44).
+
+
+---------------------------------------------------------------------------------------------------
+YW_Q4 : What workflow steps comprise the top-level workflow?
+
+yw_q4(StepName,Description)
+...................................................................................................
+yw_q4('CountSentiments','Calculate sentiments with NLTK').
