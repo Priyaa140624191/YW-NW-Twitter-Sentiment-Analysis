@@ -57,7 +57,7 @@ printall(yw_q3(_,_,_)).
 
 %-------------------------------------------------------------------------------
 banner( 'YW_Q4',
-        'What workflow steps comprise the top-level workflow?',
+        'Describe CountSentiments step?',
         'yw_q4(StepName,Description)').
 [user].
 :- table yw_q4/2.
